@@ -1,0 +1,308 @@
+# Policy comparison data
+# status options:
+#   committed   — confirmed manifesto commitment
+#   opposed     — explicitly opposed
+#   partial     — partial or conditional support
+#   tbc         — not yet announced / manifesto not released
+#
+# summary: plain-English description (null if tbc)
+# Party IDs: snp, labour, conservative, libdem, greens, reform
+
+- area: Economy & Jobs
+  icon: "💼"
+  id: economy
+  policies:
+    - party: snp
+      status: partial
+      summary: "Argues only independence can give Scotland full economic control. Spending £36m on walk-in GP services as part of public investment programme."
+    - party: labour
+      status: committed
+      summary: "9,000 new apprenticeships and a new industrial strategy. Plans to replace business rates and create a Scottish Treasury."
+    - party: conservative
+      status: committed
+      summary: "A 'growth test' for every government policy. Enterprise-style zones, cut red tape and lower business rates to attract investment."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: committed
+      summary: "Tax wealth and polluting industries to fund public services. Establish regional green skills hubs linking colleges, employers and unions."
+    - party: reform
+      status: committed
+      summary: "Slash quangos to save £7.5bn and return powers to ministers. Cut spending to grow the private sector."
+
+- area: Health & NHS
+  icon: "🏥"
+  id: health
+  policies:
+    - party: snp
+      status: committed
+      summary: "£36m investment in a new network of walk-in GP services. Claims to have halved NHS waiting times for new outpatients. Pledges the NHS will never be privatised."
+    - party: labour
+      status: committed
+      summary: "End the 8am rush for GP appointments and bring back the 'family doctor'. Speed up rollout of an NHS app, invest in AI-enabled scanners and use all available NHS capacity to cut waiting times."
+    - party: conservative
+      status: committed
+      summary: "Guarantee a GP appointment within 48 hours. £350m extra NHS funding above inflation. Bring back recently retired doctors and nurses to reduce waiting lists."
+    - party: libdem
+      status: partial
+      summary: "Campaign priority: ensure everyone can see a GP, dentist or mental health professional in their local community when they need one."
+    - party: greens
+      status: tbc
+      summary: null
+    - party: reform
+      status: committed
+      summary: "NHS to remain free at the point of need. Establish an independent Scottish Healthcare Reform Commission to develop a workforce plan, train more nurses and solve delayed discharge."
+
+- area: Education
+  icon: "🎓"
+  id: education
+  policies:
+    - party: snp
+      status: committed
+      summary: "Free university tuition fees retained. Further commitments pending full manifesto (16 April)."
+    - party: labour
+      status: committed
+      summary: "Up to 2,000 specialist education recovery teachers. Breakfast clubs in all primary schools, ban mobile phones in classrooms, more classroom assistants and two weeks of funded summer holiday clubs."
+    - party: conservative
+      status: committed
+      summary: "Raise educational standards, increase classroom assistants and ban mobile phones. Support for teachers as a priority."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: tbc
+      summary: null
+    - party: reform
+      status: committed
+      summary: "Scrap Education Scotland. Move to a knowledge-based curriculum and restore exams, reversing what the party calls a decade of declining standards."
+
+- area: Housing
+  icon: "🏠"
+  id: housing
+  policies:
+    - party: snp
+      status: committed
+      summary: "First-time buyers pay no LBTT on the first £175,000 of a property. Further housing commitments pending full manifesto."
+    - party: labour
+      status: committed
+      summary: "125,000 new homes by 2031, including more than 50,000 affordable. A dedicated Housing Bank to direct investment. LBTT relief threshold raised to £200,000 for first-time buyers."
+    - party: conservative
+      status: committed
+      summary: "80,000 affordable homes over the next five years. Abolish LBTT on primary residences entirely. Opposes rent controls."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: committed
+      summary: "All new homes must meet net-zero standards. Strengthen rent controls by removing exemptions for mid-market and build-to-rent properties. Four-month notice period for evictions and ban on evictions for sale or owner-occupation in the first 12 months."
+    - party: reform
+      status: committed
+      summary: "Target 75,000 affordable homes over five years."
+
+- area: Environment & Climate
+  icon: "🌿"
+  id: environment
+  policies:
+    - party: snp
+      status: committed
+      summary: "Committed to net zero by 2045. Argues Scotland's energy resources should be in Scottish hands, achievable only through independence."
+    - party: labour
+      status: partial
+      summary: "Support renewables expansion and remove what they describe as the SNP's block on new nuclear energy in Scotland."
+    - party: conservative
+      status: partial
+      summary: "Back oil and gas industry alongside support for new nuclear power. Less emphasis on accelerating net zero targets."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: committed
+      summary: "Get Scotland back on track for net zero by 2045 with a coordinated climate action delivery programme. £600m investment in onshore and offshore wind, wave and solar to lower energy bills."
+    - party: reform
+      status: opposed
+      summary: "Scrap all Scottish Government net zero targets. Fast-track planning for new energy projects including open cast coal mining. Prioritise energy security over climate targets."
+
+- area: Energy
+  icon: "⚡"
+  id: energy
+  policies:
+    - party: snp
+      status: committed
+      summary: "Scotland's energy resources should be in Scottish hands. Argues only independence can deliver lower energy bills by controlling the energy system."
+    - party: labour
+      status: committed
+      summary: "Support renewables expansion. Remove the block on new nuclear energy to diversify Scotland's energy mix."
+    - party: conservative
+      status: committed
+      summary: "Back North Sea oil and gas alongside support for new nuclear power as part of a balanced energy policy."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: committed
+      summary: "£600m investment programme in onshore and offshore wind, wave and solar. Zero-carbon energy to lower bills and cut emissions."
+    - party: reform
+      status: committed
+      summary: "Scrap net zero energy targets. Fast-track planning approvals for new energy projects including open cast coal. Back North Sea oil and gas."
+
+- area: Transport & Infrastructure
+  icon: "🚆"
+  id: transport
+  policies:
+    - party: snp
+      status: committed
+      summary: "Peak rail fares permanently scrapped. Further transport commitments pending full manifesto."
+    - party: labour
+      status: committed
+      summary: "£350m dedicated potholes fund. Deliver the Glasgow Airport Rail Link."
+    - party: conservative
+      status: committed
+      summary: "National pothole fund, trunk road upgrades and bridge restoration across Scotland."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: committed
+      summary: "All new homes must be connected to zero-carbon public transport. Reduce transport emissions as part of the climate action delivery programme."
+    - party: reform
+      status: committed
+      summary: "Fix potholes as an immediate priority. Abolish ULEZ-style schemes. End what the party calls 'the war on the motor car'."
+
+- area: Cost of Living
+  icon: "🛒"
+  id: cost-of-living
+  policies:
+    - party: snp
+      status: committed
+      summary: "Council tax and water bills kept lower than the rest of the UK. Prescription charges abolished. Peak rail fares scrapped."
+    - party: labour
+      status: committed
+      summary: "Making life more affordable is the first manifesto priority. Commitments include tax relief for first-time buyers and breakfast clubs to reduce household costs."
+    - party: conservative
+      status: committed
+      summary: "Cut taxes so people keep more of their own money. Raise the income tax threshold and reduce rates to ease cost-of-living pressure."
+    - party: libdem
+      status: partial
+      summary: "Tackling the cost-of-living crisis listed as a campaign focus. Full detail pending manifesto (17 April)."
+    - party: greens
+      status: committed
+      summary: "Lower energy bills through £600m renewable investment. Stronger tenant protections to limit housing costs."
+    - party: reform
+      status: committed
+      summary: "Cut Scottish income tax below rest-of-UK rates. Save households money by cutting what the party calls wasteful government spending."
+
+- area: Taxation
+  icon: "💰"
+  id: taxation
+  policies:
+    - party: snp
+      status: committed
+      summary: "LBTT relief up to £175,000 for first-time buyers. No tuition fees, no prescription charges. Further tax policy pending full manifesto."
+    - party: labour
+      status: committed
+      summary: "Raise LBTT relief threshold to £200,000 for first-time buyers. Replace business rates with a fairer system."
+    - party: conservative
+      status: committed
+      summary: "Raise the income tax threshold to £13,892 by 2031 (saving ~£250/year). Income tax rate of 19% up to the higher rate. Higher rate threshold raised to £50,270 to match the rest of the UK. Abolish LBTT on primary residences entirely."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: committed
+      summary: "Tax wealth and polluting industries to pay for public services. Ask the richest in society to pay more."
+    - party: reform
+      status: committed
+      summary: "Cut Scottish income tax below rest-of-UK rates, funded by closing quangos and cutting £7.5bn in spending."
+
+- area: Social Care
+  icon: "🤝"
+  id: social-care
+  policies:
+    - party: snp
+      status: committed
+      summary: "Free personal care retained as an existing commitment. Further social care policy pending full manifesto."
+    - party: labour
+      status: tbc
+      summary: null
+    - party: conservative
+      status: tbc
+      summary: null
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: tbc
+      summary: null
+    - party: reform
+      status: partial
+      summary: "Tackle the 'bloated welfare budget' with rigorous face-to-face assessments for claimants. Focus on reducing dependency rather than expanding entitlements."
+
+- area: Justice & Public Safety
+  icon: "⚖️"
+  id: justice
+  policies:
+    - party: snp
+      status: tbc
+      summary: null
+    - party: labour
+      status: committed
+      summary: "Named local police officers for communities. Stronger action on antisocial behaviour."
+    - party: conservative
+      status: committed
+      summary: "Repeal the Hate Crime and Public Order Act. Tougher sentencing and more prison capacity."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: tbc
+      summary: null
+    - party: reform
+      status: committed
+      summary: "Back the police. Repeal the Hate Crime and Public Order Act. Tougher approach to crime and sentencing."
+
+- area: Government Reform
+  icon: "🏛️"
+  id: government-reform
+  policies:
+    - party: snp
+      status: tbc
+      summary: null
+    - party: labour
+      status: committed
+      summary: "Cut one-third of quangos and return powers to ministers. Create a new Scottish Treasury to improve economic management."
+    - party: conservative
+      status: committed
+      summary: "Cut quangos by at least a quarter. Introduce a Taxpayer Savings Act to ensure public money is spent efficiently."
+    - party: libdem
+      status: tbc
+      summary: null
+    - party: greens
+      status: tbc
+      summary: null
+    - party: reform
+      status: committed
+      summary: "Shut down quangos entirely, saving £7.5bn. Reduce the number of MSPs from 73 to 57 by aligning Holyrood constituencies with Westminster boundaries."
+
+- area: Scottish Independence
+  icon: "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  id: independence
+  policies:
+    - party: snp
+      status: committed
+      summary: "Independence is central to the SNP's campaign. The first SNP vote elects an SNP Government; the second delivers independence. Argues Westminster doesn't work for Scotland."
+    - party: labour
+      status: opposed
+      summary: "Opposes independence and a second referendum. Argues Scotland's challenges are best solved within the UK."
+    - party: conservative
+      status: opposed
+      summary: "Strongly opposes independence and any further referendums. Positions the election as a choice between SNP division and Conservative stability."
+    - party: libdem
+      status: opposed
+      summary: "Opposes independence. Supports a federal UK as an alternative to both the status quo and separation."
+    - party: greens
+      status: committed
+      summary: "Supports Scottish independence as part of building a greener, fairer country. Would use Holyrood to advance the case for independence."
+    - party: reform
+      status: opposed
+      summary: "Strongly unionist. Opposes independence and any second referendum."

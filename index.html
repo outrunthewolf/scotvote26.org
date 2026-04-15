@@ -1,0 +1,174 @@
+---
+layout: default
+title: Scottish Parliament Election 2026 Manifesto Tracker & Policy Comparison
+description: Track manifesto releases and compare party policies for the Scottish Parliament election on 7 May 2026.
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Scottish Parliament Election 2026<br>Manifesto Tracker &amp; Policy Comparison</h1>
+    <p>Compare what every major party is promising — find the policies that matter to you.</p>
+    <span class="election-countdown">🗳️ Election day: 7 May 2026</span>
+  </div>
+</section>
+
+<!-- Manifesto Tracker -->
+<section class="section" id="manifesto-tracker">
+  <div class="container">
+    <div class="section-header">
+      <h2>Manifesto Release Tracker</h2>
+      <p>Has your party published their manifesto yet? We track every release here.</p>
+    </div>
+
+    <div class="card">
+      <div class="manifesto-table-wrap">
+        <table class="manifesto-table">
+          <thead>
+            <tr>
+              <th>Party</th>
+              <th>Leader</th>
+              <th>Status</th>
+              <th>Release Date</th>
+              <th>Manifesto</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for party in site.data.parties %}
+            <tr>
+              <td>
+                <div class="party-badge">
+                  <span class="party-dot" style="background-color: {{ party.colour }};"></span>
+                  <div>
+                    <div class="party-name-full">{{ party.name }}</div>
+                    <div class="party-name-short">{{ party.short }}</div>
+                  </div>
+                </div>
+              </td>
+              <td>{{ party.leader }}</td>
+              <td>
+                {% if party.manifesto_released %}
+                  <span class="status-pill released">Released</span>
+                {% else %}
+                  <span class="status-pill pending">Pending</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if party.manifesto_date %}
+                  {{ party.manifesto_date }}
+                {% else %}
+                  <span style="color: var(--colour-muted); font-size: .85rem;">Not yet published</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if party.manifesto_url %}
+                  <a class="manifesto-link" href="{{ party.manifesto_url }}" target="_blank" rel="noopener">View manifesto →</a>
+                {% else %}
+                  <span style="color: var(--colour-muted); font-size: .85rem;">—</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Policy Comparison -->
+<section class="section" id="policy-comparison">
+  <div class="container">
+    <div class="section-header">
+      <h2>Policy Comparison</h2>
+      <p>Browse each party's commitments by policy area. Filter to focus on the issues that matter most to you.</p>
+    </div>
+
+    <div class="tbc-notice">
+      <strong>Manifestos are still being published.</strong> Most parties have not yet released their 2026 manifestos.
+      Policy commitments will be filled in as each manifesto is published. Check back regularly — election day is 7 May 2026.
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <span style="font-size: .82rem; font-weight: 600; color: var(--colour-muted);">Key:</span>
+      <span class="legend-item">
+        <span class="policy-status committed">Committed</span>
+        <span>Party has made this commitment</span>
+      </span>
+      <span class="legend-item">
+        <span class="policy-status opposed">Opposed</span>
+        <span>Party explicitly opposes this</span>
+      </span>
+      <span class="legend-item">
+        <span class="policy-status partial">Partial</span>
+        <span>Conditional or partial support</span>
+      </span>
+      <span class="legend-item">
+        <span class="policy-status tbc">TBC</span>
+        <span>Awaiting manifesto</span>
+      </span>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar">
+      <label>Filter by area:</label>
+      <button class="filter-btn active" data-filter="all">All areas</button>
+      {% for area in site.data.policies %}
+      <button class="filter-btn" data-filter="{{ area.id }}">{{ area.icon }} {{ area.area }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="card">
+      <div class="policy-table-wrap">
+        <table class="policy-table">
+          <thead>
+            <tr>
+              <th>Policy Area</th>
+              {% for party in site.data.parties %}
+              <th class="party-header-cell">
+                <span class="party-header-pill" style="background-color: {{ party.colour }}; color: {{ party.text_colour }};">
+                  {{ party.short }}
+                </span>
+              </th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for area in site.data.policies %}
+            <tr data-area="{{ area.id }}">
+              <td class="policy-area-cell">
+                <span class="policy-area-icon">{{ area.icon }}</span>{{ area.area }}
+              </td>
+              {% for party in site.data.parties %}
+                {% assign party_policy = null %}
+                {% for pol in area.policies %}
+                  {% if pol.party == party.id %}
+                    {% assign party_policy = pol %}
+                  {% endif %}
+                {% endfor %}
+                <td class="policy-cell">
+                  {% if party_policy %}
+                    <span class="policy-status {{ party_policy.status }}">
+                      {% if party_policy.status == 'committed' %}Committed
+                      {% elsif party_policy.status == 'opposed' %}Opposed
+                      {% elsif party_policy.status == 'partial' %}Partial
+                      {% else %}TBC{% endif %}
+                    </span>
+                    {% if party_policy.summary %}
+                      <div class="policy-summary">{{ party_policy.summary }}</div>
+                    {% endif %}
+                  {% else %}
+                    <span class="policy-status tbc">TBC</span>
+                  {% endif %}
+                </td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>

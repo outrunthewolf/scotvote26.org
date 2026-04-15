@@ -1,0 +1,34 @@
+title: Scotland Votes 2026
+description: Scottish Parliament Election 2026 — manifesto tracker and policy comparison across all major parties.
+url: ""
+baseurl: ""
+
+author:
+  name: Scotland Votes 2026
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+timezone: Europe/London
+lang: en-GB
+
+# Election date
+election_date: "7 May 2026"
+
+# GitHub repository (used in footer)
+github_repo: "https://github.com/YOUR-USERNAME/elections-scotland-2026"
+
+# Analytics — GoatCounter (privacy-first, no cookie banner needed)
+# Sign up free at https://www.goatcounter.com and set your site code below
+# Leave blank to disable analytics
+goatcounter_code: "https://nashintergalactic.goatcounter.com/count"

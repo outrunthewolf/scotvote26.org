@@ -1,0 +1,71 @@
+# Major parties contesting the Scottish Parliament election, 7 May 2026
+# manifesto_released: true/false
+# manifesto_date: date string or null
+# manifesto_url: URL or null
+# Note: Alba Party dissolved 26 March 2026 and did not contest the election.
+
+- id: snp
+  name: Scottish National Party
+  short: SNP
+  colour: "#FDD835"
+  text_colour: "#1a1a1a"
+  manifesto_released: false
+  manifesto_date: null
+  manifesto_url: null
+  leader: John Swinney
+  stance_independence: "Pro-independence. Advocates for a second independence referendum as central campaign issue."
+
+- id: labour
+  name: Scottish Labour
+  short: Labour
+  colour: "#E4003B"
+  text_colour: "#ffffff"
+  manifesto_released: true
+  manifesto_date: "13 April 2026"
+  manifesto_url: "https://scottishlabour.org.uk/manifesto-2026/"
+  leader: Anas Sarwar
+  stance_independence: "Unionist. Opposes independence and a second referendum."
+
+- id: conservative
+  name: Scottish Conservative Party
+  short: Conservatives
+  colour: "#0087DC"
+  text_colour: "#ffffff"
+  manifesto_released: true
+  manifesto_date: "7 April 2026"
+  manifesto_url: "https://www.scottishconservatives.com/manifestos/2026-scottish-parliament-election-manifesto/"
+  leader: Russell Findlay
+  stance_independence: "Unionist. Strongly opposes independence and any further referendums."
+
+- id: libdem
+  name: Scottish Liberal Democrats
+  short: Lib Dems
+  colour: "#FAA61A"
+  text_colour: "#1a1a1a"
+  manifesto_released: false
+  manifesto_date: null
+  manifesto_url: "https://www.scotlibdems.org.uk/2026-manifesto"
+  leader: Alex Cole-Hamilton
+  stance_independence: "Unionist. Opposes independence; supports a federal UK."
+
+- id: greens
+  name: Scottish Greens
+  short: Greens
+  colour: "#00B140"
+  text_colour: "#ffffff"
+  manifesto_released: true
+  manifesto_date: "14 April 2026"
+  manifesto_url: "https://greens.scot/manifesto"
+  leader: Gillian Mackay & Patrick Harvie
+  stance_independence: "Pro-independence. Supports independence as part of a green, progressive future."
+
+- id: reform
+  name: Reform UK Scotland
+  short: Reform UK
+  colour: "#12B6CF"
+  text_colour: "#ffffff"
+  manifesto_released: true
+  manifesto_date: "19 March 2026"
+  manifesto_url: "https://www.reformparty.uk/view-pdf/scotland-manifesto"
+  leader: Malcolm Offord
+  stance_independence: "Unionist. Strongly opposes independence."
