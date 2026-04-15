@@ -1,0 +1,88 @@
+# IFS (Institute for Fiscal Studies) initial responses to Scottish Parliament 2026 manifestos
+# Source: https://ifs.org.uk/scottish-election-2026
+#
+# assessed: true/false — whether IFS has published a response yet
+# verdict: 2–3 sentence overall judgement
+# themes: key findings by topic area
+# source_url: link to the IFS article
+# date: date IFS published the response
+
+- party: snp
+  assessed: false
+  verdict: null
+  themes: []
+  source_url: null
+  date: null
+
+- party: labour
+  assessed: true
+  date: "April 2026"
+  source_url: "https://ifs.org.uk/articles/initial-response-scottish-labour-manifesto"
+  verdict: "A **notably restrained** manifesto — no big tax cuts or expansions of entitlements, with most spending pledged from within existing budgets. The **lack of big unfunded commitments is fiscally welcome** given Scotland's challenging position. But delivering the targeted improvements to public services with constrained funding would still require **cuts elsewhere, tax rises, or productivity gains** — and whether that proves possible is less clear."
+  themes:
+    - title: "Fiscal approach"
+      summary: "Compared with every other party, this is a **pared-back offering**: no large new entitlements, no unfunded tax cuts. Most spending pledges represent **small changes** to how money is already planned to be spent. This means **fewer obvious winners** but also fewer losers from measures needed to pay for giveaways — and more of Scotland's constrained funding available for existing services."
+    - title: "Taxation"
+      summary: "No further income tax rises are committed to, though **existing threshold freezes through 2028–29 remain in place**. An aspiration to cut the highest marginal income tax rates is noted, but it is **explicitly contingent** on economic and fiscal conditions — making it difficult to deliver. On council tax, Labour's position amounts to **the same deferral as the SNP**: no firm promise, and a 'consensus' requirement that risks reform never happening."
+    - title: "Families & childcare"
+      summary: "The main policy — a Scottish top-up to tax-free childcare, **raising the government subsidy from 25p to 37.5p per £1** — helps a wider age range than rival parties' funded hours proposals, but remains a partial subsidy that **blunts cost-of-living benefits**. Beyond this, there is **little new cash support for families with children**, well short of what would be needed to meet Scotland's statutory child poverty targets."
+    - title: "Public services"
+      summary: "Health and social care is committed to **at least £25 billion by 2030–31**, implying real-terms growth of just 1.4% a year — meaning spending would **barely increase at all** in the latter years of the parliament. Plans for 2,000 recovery teachers and 1,500 classroom assistants are intended to be funded from within existing budgets, but **that money is likely needed for the NHS**. Delivering large improvements to services within these constraints would be difficult."
+
+- party: conservative
+  assessed: true
+  date: "April 2026"
+  source_url: "https://ifs.org.uk/articles/initial-response-scottish-conservative-manifesto"
+  verdict: "Tax cuts and spending increases totalling **almost £6 billion a year by 2031–32** are costed on paper — but **whether the package would survive contact with reality is far from clear.** The nearly £4 billion a year expected from back-office and administrative savings is **not credible at that scale** without cuts to front-line services. Scotland can have lower taxes and higher spending on some services, but **giveaways of this scale cannot credibly be funded largely through back-office savings.**"
+  themes:
+    - title: "Fiscal credibility"
+      summary: "The costs of new measures are set out clearly — **a welcome level of transparency** — but the funding side does not hold up to scrutiny. **Almost £4 billion a year** is expected from back-office and administration savings by 2031–32, equivalent to over 7% of projected Scottish public services spending. This comes **on top of savings already assumed** in the existing Spending Review. History is replete with missed targets for savings of this kind, necessitating tax rises or cuts to front-line services instead."
+    - title: "Income tax & business rates"
+      summary: "Proposed income tax cuts would **benefit all Scottish taxpayers**, with gains rising sharply with income — around £200/year at £15,000 income, rising to **£1,660/year for anyone above the higher-rate threshold.** Total cost: **almost £3 billion a year by 2031–32.** The move to a single marginal rate below the higher-rate threshold would be a **welcome simplification.** Business rates cuts (£0.7bn/year) also include sensible structural reforms, though permanently lower rates for specific sectors is less clearly justified."
+    - title: "Disability benefits cuts"
+      summary: "The plan to tighten eligibility for adult disability payments (ADP) for those with mental health conditions is **concrete, not vague** — a distinction from other parties. But the **£1.8 billion a year** savings estimated by 2030–31 (34% of forecast ADP spending) are highly uncertain. The costings assume few claimants would seek medical diagnoses to qualify; the OBR assumed behavioural responses would **halve** equivalent UK-level savings. IFS judges that **savings would likely be lower than assumed.**"
+    - title: "Childcare & child payment"
+      summary: "Childcare expansion to cover working families from **9 months onwards** mirrors English reforms, but the **majority of beneficiaries would be families who would have worked and paid for childcare anyway** — making this primarily a cost-of-living subsidy rather than a measure that changes work incentives or child outcomes. Restricting the Scottish child payment to two children would strengthen work incentives but **increase child poverty in larger families**, which already have substantially higher poverty rates."
+    - title: "Public services"
+      summary: "An extra **£350 million for the NHS in 2028–29**, rising to an assumed £1 billion by 2031–32, should help improve services — though the challenge of meeting all the manifesto's health objectives **should not be underestimated.** Schools proposals focus on knowledge-based curriculum reform, increased testing and discipline — similar to Reform UK's approach. Significant new spending on adult education and apprenticeships (**£260 million a year by 2031–32**) is among the more distinctive positive commitments."
+
+- party: libdem
+  assessed: false
+  verdict: null
+  themes: []
+  source_url: null
+  date: null
+
+- party: greens
+  assessed: true
+  date: "April 2026"
+  source_url: "https://ifs.org.uk/articles/initial-response-scottish-greens-manifesto"
+  verdict: "A large manifesto proposing huge changes, but **the tax plans seem unlikely to raise enough revenue** to fund all the additional spending proposed — meaning even larger tax rises or cuts to lower-priority spending would be needed. Scotland's position as **the highest-taxed part of the UK** would be cemented, and **whether plans could be delivered over a parliament is far from clear.**"
+  themes:
+    - title: "Property taxation"
+      summary: "Reform of council tax is genuinely welcome — replacing regressive 1991 valuations with a proportional property tax would raise around **£1.3–1.5bn a year** and is **good tax design**. In contrast, further increases to LBTT are **economically damaging**: it discourages beneficial transactions, makes it harder to move for work or family, and is **a tax that should be reduced, not made bigger.**"
+    - title: "Fiscal credibility"
+      summary: "It is welcome that the Greens pair large spending commitments with a recognition that higher revenues are needed. However, **the revenue proposals appear to fall short** of what the spending plans would cost, and big tax rises to fund new universal entitlements would make **further increases — likely needed to maintain existing services — even harder to deliver.**"
+    - title: "Families & childcare"
+      summary: "Large increases proposed to the Scottish child payment (rising to **£55/week per child by 2030**) would reduce child poverty but **significantly weaken work incentives** — particularly given the cliff-edge structure where **a £1 rise in earnings can remove the entire payment.** Childcare expansion plans are ambitious, though costings assume full take-up and do not fully account for cost inflation."
+    - title: "Public services"
+      summary: "Plans include free bus travel for all, free dental care, free non-residential social care, and a major boost to GP numbers (**from 0.65 to 1 per 1,000 people — a very large increase**). External costings are based on data several years old — **true costs are likely higher.** Whether this scale of service expansion could be delivered within a single parliament is unclear."
+    - title: "Tax complexity"
+      summary: "The manifesto proposes a wide range of new taxes, including a stadium levy and tourism point-of-entry levy. While some reforms address genuine distortions, **the net effect would be a significant increase in the complexity of the Scottish tax system**, with consequences for businesses and the wider economy."
+
+- party: reform
+  assessed: true
+  date: "April 2026"
+  source_url: "https://ifs.org.uk/articles/initial-response-reform-uk-scotland-manifesto"
+  verdict: "Plans for income tax cuts costing **up to £4 billion a year** are the headline commitment, but the claimed self-funding mechanism is **a mirage** created by misunderstanding the devolution settlement and incorrectly comparing cumulative and annual figures. The combination of big tax cuts and implied benefit increases **without any identified source of funding is not fiscally credible**, and the analysis underpinning the flagship policy is, in IFS's words, **'unserious at best.'**"
+  themes:
+    - title: "Income tax cuts"
+      summary: "Initial cuts would set each Scottish income tax rate **1 percentage point below the rest of the UK**, costing around **£2.3 billion a year** by 2030, rising to £4 billion if the full ambition (3 points below rUK) is achieved. The gains are **heavily skewed to high earners**: someone on the National Living Wage (£24,785) would save at most £80/year; someone on £50,000 saves £1,900; someone on £125,000 saves £6,400."
+    - title: "The self-funding claim"
+      summary: "The manifesto claims the tax cuts would pay for themselves via economic growth — IFS concludes this is **wrong in two distinct ways.** First, behavioural responses are already incorporated in the cost estimates. Second, **the £2 billion cost is annual, not a one-off** — so even an £8 billion cumulative gain over 10 years would not cover it. Compounding the error: because only around a third of taxes are devolved, a 1% earnings boost would generate only **~£300 million a year** for the Scottish budget — not the figures cited. IFS calls the analysis **'not good enough.'**"
+    - title: "Marginal tax rates"
+      summary: "Reform UK rightly highlights that some people face **very high effective marginal tax rates**, including cliff-edges where earning £1 more can remove thousands in benefits. The concrete proposal to taper carers' benefits more smoothly is **feasible, albeit at a cost.** However, addressing the broader pledge that no-one should face a marginal rate above 50% — especially for those on Universal Credit — **would require top-ups to benefit payments for many low- and middle-income families**, pushing up Scottish benefit spending rather than reducing it."
+    - title: "Property tax reform"
+      summary: "Reform UK is **right that LBTT and business rates have serious flaws** and should be reformed. But the proposed annual property tax replacement has significant shortcomings: pre-announcing LBTT reductions would **freeze the property market** as buyers delay purchases, and the plan to **end regular property revaluations** misunderstands how business rates work — revaluations are a feature, not a bug, of a well-functioning property tax."
+    - title: "Public services"
+      summary: "Despite listing 'fixing our NHS' as its first priority, the manifesto **provides no spending detail or policy initiatives** that would deliver meaningful improvements — a post-election commission is proposed instead. On schools, curriculum reform and greater testing could have benefits. On local government, a review of statutory duties is worthwhile, but the **fundamental problem — growing social care costs and falling funding — cannot be resolved** within the constraints of Reform UK's tax cut plans."

@@ -17,7 +17,7 @@
       reform:       { colour: '#12B6CF', rgb: '18,182,207',  text: '#ffffff' },
     },
     distinct: {
-      snp:          { colour: '#FF00AA', rgb: '255,0,170',   text: '#ffffff' },  // neon magenta
+      snp:          { colour: '#FF00FF', rgb: '255,0,255',   text: '#1a1a1a' },  // neon magenta
       labour:       { colour: '#00FFFF', rgb: '0,255,255',   text: '#1a1a1a' },  // neon cyan
       conservative: { colour: '#FF6600', rgb: '255,102,0',   text: '#1a1a1a' },  // neon orange
       libdem:       { colour: '#39FF14', rgb: '57,255,20',   text: '#1a1a1a' },  // neon green
@@ -57,6 +57,12 @@
       // Manifesto table dots
       document.querySelectorAll('.party-dot[data-party="' + id + '"]').forEach(function (el) {
         el.style.backgroundColor = p.colour;
+      });
+
+      // IFS card headers
+      document.querySelectorAll('.ifs-card-header[data-party="' + id + '"]').forEach(function (el) {
+        el.style.backgroundColor = p.colour;
+        el.style.color = p.text;
       });
     });
   }

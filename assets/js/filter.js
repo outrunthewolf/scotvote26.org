@@ -58,6 +58,12 @@
       document.querySelectorAll('.party-dot[data-party="' + id + '"]').forEach(function (el) {
         el.style.backgroundColor = p.colour;
       });
+
+      // IFS card headers
+      document.querySelectorAll('.ifs-card-header[data-party="' + id + '"]').forEach(function (el) {
+        el.style.backgroundColor = p.colour;
+        el.style.color = p.text;
+      });
     });
   }
 

@@ -110,6 +110,56 @@ description: Compare party policies and track manifesto releases for the Scottis
   </div>
 </section>
 
+<!-- IFS Analysis -->
+<section class="section" id="ifs-analysis">
+  <div class="container">
+    <div class="section-header">
+      <h2>Independent Fiscal Analysis</h2>
+      <p>The <a href="https://ifs.org.uk/scottish-election-2026" target="_blank" rel="noopener">Institute for Fiscal Studies</a> has published initial responses to each party's manifesto, assessing fiscal credibility, tax design and spending plans.</p>
+    </div>
+
+    <div class="ifs-grid">
+      {% for reaction in site.data.ifs_reactions %}
+        {% assign party = site.data.parties | where: "id", reaction.party | first %}
+        {% if party %}
+        <div class="ifs-card {% unless reaction.assessed %}ifs-card--pending{% endunless %}">
+          <div class="ifs-card-header" data-party="{{ reaction.party }}" style="background-color: {{ party.colour }}; color: {{ party.text_colour }};">
+            <span class="ifs-party-name">{{ party.short }}</span>
+            {% if reaction.assessed %}
+              <span class="ifs-assessed-badge">Assessed</span>
+            {% else %}
+              <span class="ifs-pending-badge">Not yet assessed</span>
+            {% endif %}
+          </div>
+          <div class="ifs-card-body">
+            {% if reaction.assessed %}
+              <p class="ifs-verdict">{{ reaction.verdict | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</p>
+              {% if reaction.themes.size > 0 %}
+              <details class="ifs-details">
+                <summary class="ifs-details-toggle">More information</summary>
+                <ul class="ifs-themes">
+                  {% for theme in reaction.themes %}
+                  <li>
+                    <span class="ifs-theme-label">{{ theme.title }}</span>
+                    <span class="ifs-theme-body">{{ theme.summary | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</span>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </details>
+              {% endif %}
+              <a class="ifs-source-link" href="{{ reaction.source_url }}" target="_blank" rel="noopener">Read full IFS analysis →</a>
+            {% else %}
+              <p class="ifs-pending-text">IFS has not yet published a response to the {{ party.name }} manifesto.{% unless party.manifesto_released %} The manifesto has not yet been published.{% endunless %}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
 <!-- Manifesto Tracker -->
 <section class="section" id="manifesto-tracker">
   <div class="container">
