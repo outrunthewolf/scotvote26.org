@@ -8,6 +8,7 @@
   name: Scottish National Party
   short: SNP
   colour: "#FDD835"
+  colour_rgb: "253,216,53"
   text_colour: "#1a1a1a"
   manifesto_released: false
   manifesto_date: null
@@ -19,6 +20,7 @@
   name: Scottish Labour
   short: Labour
   colour: "#E4003B"
+  colour_rgb: "228,0,59"
   text_colour: "#ffffff"
   manifesto_released: true
   manifesto_date: "13 April 2026"
@@ -30,6 +32,7 @@
   name: Scottish Conservative Party
   short: Conservatives
   colour: "#0087DC"
+  colour_rgb: "0,135,220"
   text_colour: "#ffffff"
   manifesto_released: true
   manifesto_date: "7 April 2026"
@@ -41,6 +44,7 @@
   name: Scottish Liberal Democrats
   short: Lib Dems
   colour: "#FAA61A"
+  colour_rgb: "250,166,26"
   text_colour: "#1a1a1a"
   manifesto_released: false
   manifesto_date: null
@@ -52,6 +56,7 @@
   name: Scottish Greens
   short: Greens
   colour: "#00B140"
+  colour_rgb: "0,177,64"
   text_colour: "#ffffff"
   manifesto_released: true
   manifesto_date: "14 April 2026"
@@ -63,6 +68,7 @@
   name: Reform UK Scotland
   short: Reform UK
   colour: "#12B6CF"
+  colour_rgb: "18,182,207"
   text_colour: "#ffffff"
   manifesto_released: true
   manifesto_date: "19 March 2026"

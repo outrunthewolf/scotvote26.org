@@ -24,6 +24,7 @@
 
   --radius: 6px;
   --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --site-header-height: 72px; /* fallback — overwritten by JS on load/resize */
 }
 
 html { font-size: 16px; scroll-behavior: smooth; }
@@ -165,7 +166,8 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--colour-border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  overflow: hidden;
+  overflow: clip; /* clip = same visual as hidden but does NOT create a scroll container,
+                     which would silently break position:sticky on child elements */
 }
 
 /* --- Manifesto Tracker Table ----------------------------- */
@@ -308,21 +310,25 @@ a:hover { text-decoration: underline; }
   padding: .75rem .75rem;
   text-align: left;
   border-bottom: 2px solid var(--colour-border);
+  border-right: 1px solid var(--colour-border);
   font-weight: 600;
   font-size: .78rem;
   text-transform: uppercase;
   letter-spacing: .04em;
   color: var(--colour-muted);
   white-space: nowrap;
-  position: sticky;
-  top: 0;
 }
+
+.policy-table th:last-child { border-right: none; }
 
 .policy-table td {
   padding: .8rem .75rem;
   border-bottom: 1px solid var(--colour-border);
+  border-right: 1px solid var(--colour-border);
   vertical-align: top;
 }
+
+.policy-table td:last-child { border-right: none; }
 
 .policy-table tr:last-child td { border-bottom: none; }
 
@@ -443,6 +449,110 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   font-size: .82rem;
+}
+
+/* --- Distinct colours toggle -------------------------------- */
+.colour-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: .85rem;
+  font-weight: 500;
+  color: var(--colour-text);
+}
+
+/* In the header nav the toggle sits on a dark background */
+.nav-colour-toggle {
+  color: #c9d4ff;
+  font-size: .9rem;
+}
+
+.colour-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.colour-toggle-track {
+  width: 40px;
+  height: 22px;
+  background: #adb5bd;
+  border-radius: 11px;
+  position: relative;
+  transition: background .2s;
+  flex-shrink: 0;
+}
+
+.colour-toggle-track::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  top: 3px;
+  left: 3px;
+  transition: transform .2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+.colour-toggle input:checked + .colour-toggle-track {
+  background: var(--colour-accent);
+}
+
+.colour-toggle input:checked + .colour-toggle-track::after {
+  transform: translateX(18px);
+}
+
+.nav-colour-toggle .colour-toggle-track {
+  background: rgba(255,255,255,.25);
+}
+
+.nav-colour-toggle input:checked + .colour-toggle-track {
+  background: #4f8ef7;
+}
+
+/* --- Party context bar (shown when table header scrolls out of view) --- */
+.party-sticky-bar {
+  position: fixed;
+  top: var(--site-header-height);
+  left: 0;
+  right: 0;
+  z-index: 90;
+  background: #16213e;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 3px 10px rgba(0,0,0,.25);
+  transform: translateY(-110%);
+  transition: transform .2s ease;
+  pointer-events: none;
+}
+
+.party-sticky-bar.is-visible {
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.party-sticky-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: .5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.party-sticky-bar-label {
+  font-size: .72rem;
+  color: #adb5bd;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-right: .25rem;
+  white-space: nowrap;
 }
 
 /* --- Responsive ------------------------------------------ */

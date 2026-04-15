@@ -1,78 +1,15 @@
 ---
 layout: default
-title: Scottish Parliament Election 2026 Manifesto Tracker & Policy Comparison
-description: Track manifesto releases and compare party policies for the Scottish Parliament election on 7 May 2026.
+title: Scottish Parliament Election 2026 — Policy Comparison & Manifesto Tracker
+description: Compare party policies and track manifesto releases for the Scottish Parliament election on 7 May 2026.
 ---
 
 <!-- Hero -->
 <section class="hero">
   <div class="container">
-    <h1>Scottish Parliament Election 2026<br>Manifesto Tracker &amp; Policy Comparison</h1>
+    <h1>Scottish Parliament Election 2026<br>Policy Comparison &amp; Manifesto Tracker</h1>
     <p>Compare what every major party is promising — find the policies that matter to you.</p>
     <span class="election-countdown">🗳️ Election day: 7 May 2026</span>
-  </div>
-</section>
-
-<!-- Manifesto Tracker -->
-<section class="section" id="manifesto-tracker">
-  <div class="container">
-    <div class="section-header">
-      <h2>Manifesto Release Tracker</h2>
-      <p>Has your party published their manifesto yet? We track every release here.</p>
-    </div>
-
-    <div class="card">
-      <div class="manifesto-table-wrap">
-        <table class="manifesto-table">
-          <thead>
-            <tr>
-              <th>Party</th>
-              <th>Leader</th>
-              <th>Status</th>
-              <th>Release Date</th>
-              <th>Manifesto</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for party in site.data.parties %}
-            <tr>
-              <td>
-                <div class="party-badge">
-                  <span class="party-dot" style="background-color: {{ party.colour }};"></span>
-                  <div>
-                    <div class="party-name-full">{{ party.name }}</div>
-                    <div class="party-name-short">{{ party.short }}</div>
-                  </div>
-                </div>
-              </td>
-              <td>{{ party.leader }}</td>
-              <td>
-                {% if party.manifesto_released %}
-                  <span class="status-pill released">Released</span>
-                {% else %}
-                  <span class="status-pill pending">Pending</span>
-                {% endif %}
-              </td>
-              <td>
-                {% if party.manifesto_date %}
-                  {{ party.manifesto_date }}
-                {% else %}
-                  <span style="color: var(--colour-muted); font-size: .85rem;">Not yet published</span>
-                {% endif %}
-              </td>
-              <td>
-                {% if party.manifesto_url %}
-                  <a class="manifesto-link" href="{{ party.manifesto_url }}" target="_blank" rel="noopener">View manifesto →</a>
-                {% else %}
-                  <span style="color: var(--colour-muted); font-size: .85rem;">—</span>
-                {% endif %}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -85,8 +22,8 @@ description: Track manifesto releases and compare party policies for the Scottis
     </div>
 
     <div class="tbc-notice">
-      <strong>Manifestos are still being published.</strong> Most parties have not yet released their 2026 manifestos.
-      Policy commitments will be filled in as each manifesto is published. Check back regularly — election day is 7 May 2026.
+      <strong>Manifestos are still being published.</strong> SNP (16 Apr) and Lib Dems (17 Apr) are yet to publish.
+      Policy commitments will be filled in as each manifesto drops. Check back regularly — election day is 7 May 2026.
     </div>
 
     <!-- Legend -->
@@ -126,8 +63,8 @@ description: Track manifesto releases and compare party policies for the Scottis
             <tr>
               <th>Policy Area</th>
               {% for party in site.data.parties %}
-              <th class="party-header-cell">
-                <span class="party-header-pill" style="background-color: {{ party.colour }}; color: {{ party.text_colour }};">
+              <th class="party-header-cell" data-party="{{ party.id }}" style="background-color: rgba({{ party.colour_rgb }}, 0.15);">
+                <span class="party-header-pill" data-party="{{ party.id }}" style="background-color: {{ party.colour }}; color: {{ party.text_colour }};">
                   {{ party.short }}
                 </span>
               </th>
@@ -147,7 +84,7 @@ description: Track manifesto releases and compare party policies for the Scottis
                     {% assign party_policy = pol %}
                   {% endif %}
                 {% endfor %}
-                <td class="policy-cell">
+                <td class="policy-cell" data-party="{{ party.id }}" style="background-color: rgba({{ party.colour_rgb }}, 0.06);">
                   {% if party_policy %}
                     <span class="policy-status {{ party_policy.status }}">
                       {% if party_policy.status == 'committed' %}Committed
@@ -170,5 +107,68 @@ description: Track manifesto releases and compare party policies for the Scottis
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- Manifesto Tracker -->
+<section class="section" id="manifesto-tracker">
+  <div class="container">
+    <div class="section-header">
+      <h2>Manifesto Release Tracker</h2>
+      <p>Has your party published their manifesto yet? We track every release here.</p>
+    </div>
+
+    <div class="card">
+      <div class="manifesto-table-wrap">
+        <table class="manifesto-table">
+          <thead>
+            <tr>
+              <th>Party</th>
+              <th>Leader</th>
+              <th>Status</th>
+              <th>Release Date</th>
+              <th>Manifesto</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for party in site.data.parties %}
+            <tr>
+              <td>
+                <div class="party-badge">
+                  <span class="party-dot" data-party="{{ party.id }}" style="background-color: {{ party.colour }};"></span>
+                  <div>
+                    <div class="party-name-full">{{ party.name }}</div>
+                    <div class="party-name-short">{{ party.short }}</div>
+                  </div>
+                </div>
+              </td>
+              <td>{{ party.leader }}</td>
+              <td>
+                {% if party.manifesto_released %}
+                  <span class="status-pill released">Released</span>
+                {% else %}
+                  <span class="status-pill pending">Pending</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if party.manifesto_date %}
+                  {{ party.manifesto_date }}
+                {% else %}
+                  <span style="color: var(--colour-muted); font-size: .85rem;">Not yet published</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if party.manifesto_url %}
+                  <a class="manifesto-link" href="{{ party.manifesto_url }}" target="_blank" rel="noopener">View manifesto →</a>
+                {% else %}
+                  <span style="color: var(--colour-muted); font-size: .85rem;">—</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </section>
