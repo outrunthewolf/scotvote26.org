@@ -18,6 +18,7 @@ exclude:
   - README.md
   - node_modules
   - vendor
+  - _config.production.yml
 
 timezone: Europe/London
 lang: en-GB
@@ -31,4 +32,4 @@ github_repo: "https://github.com/YOUR-USERNAME/elections-scotland-2026"
 # Analytics — GoatCounter (privacy-first, no cookie banner needed)
 # Sign up free at https://www.goatcounter.com and set your site code below
 # Leave blank to disable analytics
-goatcounter_code: "https://nashintergalactic.goatcounter.com/count"
+goatcounter_code: ""
