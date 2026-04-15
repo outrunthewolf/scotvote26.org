@@ -6,6 +6,12 @@ baseurl: ""
 author:
   name: Scotland Votes 2026
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/social-seo.png
+
 markdown: kramdown
 highlighter: rouge
 
