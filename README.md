@@ -2,7 +2,7 @@
 
 Track Scottish party manifestos and compare policies side by side. Built for voters.
 
-Live at **[scotvotes.scot](https://scotvotes.scot)** — Scottish Parliament election, 7 May 2026.
+Live at **[scotvote26.org](https://scotvote26.org)** — Scottish Parliament election, 7 May 2026.
 
 ---
 
