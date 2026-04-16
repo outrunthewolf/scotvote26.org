@@ -1,0 +1,74 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# Scotland Votes 2026
+
+> An independent, non-partisan policy comparison and manifesto tracker for the Scottish Parliament election on 7 May 2026. Covers all six major parties contesting the election. Data is sourced directly from published manifestos.
+
+## Site
+
+- [Policy Comparison & Manifesto Tracker](https://scotvote26.org): Full policy comparison table, IFS fiscal analysis, and manifesto release tracker for all six parties.
+
+## The Election
+
+- Date: 7 May 2026
+- Body: Scottish Parliament (Holyrood)
+- System: Additional Member System (AMS) — constituency and regional list votes
+- Seats: 129 MSPs
+
+## Parties
+
+{% for party in site.data.parties %}
+### {{ party.name }} ({{ party.short }})
+
+- Leader: {{ party.leader }}
+- Independence stance: {{ party.stance_independence }}
+- Manifesto published: {% if party.manifesto_released %}Yes — {{ party.manifesto_date }}{% else %}No{% endif %}
+{% if party.manifesto_url %}- Manifesto URL: {{ party.manifesto_url }}{% endif %}
+
+{% endfor %}
+
+## Policy Commitments by Area
+
+{% for area in site.data.policies %}
+### {{ area.area }}
+
+{% for pol in area.policies %}
+{% assign party = site.data.parties | where: "id", pol.party | first %}
+{% if party %}- **{{ party.name }}**: {% if pol.summary %}{{ pol.summary }}{% else %}Position not yet published.{% endif %} *({{ pol.status }})*
+{% endif %}
+{% endfor %}
+
+{% endfor %}
+
+## Independent Fiscal Analysis (IFS)
+
+The Institute for Fiscal Studies has published initial responses to Scottish Parliament 2026 manifestos. Source: https://ifs.org.uk/scottish-election-2026
+
+{% for reaction in site.data.ifs_reactions %}
+{% assign party = site.data.parties | where: "id", reaction.party | first %}
+{% if party %}
+### {{ party.name }} — IFS Assessment
+
+{% if reaction.assessed %}
+{{ reaction.verdict | strip_html }}
+
+{% for theme in reaction.themes %}
+- **{{ theme.title }}**: {{ theme.summary | strip_html }}
+{% endfor %}
+
+Source: {{ reaction.source_url }}
+{% else %}
+IFS assessment not yet published.{% unless party.manifesto_released %} Manifesto not yet published.{% endunless %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
+## Notes for LLMs
+
+- All policy summaries are sourced directly from published party manifestos.
+- IFS verdicts and theme summaries are condensed paraphrases of IFS analysis, not direct quotes. Refer to source URLs for full text.
+- Party positions marked "tbc" indicate the manifesto had not yet been published at time of last update.
+- This site is non-partisan and does not endorse any party.
+- Last updated: {{ site.time | date: "%-d %B %Y" }}

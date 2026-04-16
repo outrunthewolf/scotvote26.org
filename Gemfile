@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.3"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-sitemap"
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
