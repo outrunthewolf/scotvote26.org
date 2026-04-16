@@ -8,11 +8,21 @@
 # date: date IFS published the response
 
 - party: snp
-  assessed: false
-  verdict: null
-  themes: []
-  source_url: null
-  date: null
+  assessed: true
+  date: "April 2026"
+  source_url: "https://ifs.org.uk/articles/initial-response-snp-manifesto"
+  verdict: "Additional spending of **£1.4 billion a year by 2031–32** is pledged without a credible funding plan — assumed efficiencies would need to stack on top of **already significant savings built into existing spending plans**, making further tax rises or cuts the more likely outcome. The standout policies — means-tested childcare expansion and statutory food price ceilings — are either expensive, risky, or both. And despite the SNP's argument that independence would ease fiscal pressures, **independence would end the fiscal transfers from London that currently fund Scotland's higher spending per head**, adding to challenges rather than relieving them."
+  themes:
+    - title: "Fiscal credibility"
+      summary: "The £1.4 billion cost is assumed to be covered by SEND funding from Westminster (£360m/year) and **£1 billion from efficiency savings and higher growth**. But IFS judges that most of the SEND funding will likely need to go to the NHS, and the efficiency savings would come **on top of already significant cuts** built into the Spending Review. In a context of slowing UK funding and over-optimistic income tax forecasts, **further tax rises or deeper spending cuts are the more probable outcome**."
+    - title: "Taxation"
+      summary: "The manifesto has **very few concrete tax policies**. The income tax commitment not to add bands or raise rates leaves room to freeze thresholds — dragging more people into higher bands. The 'mansion tax' adding two council tax bands for properties over £1 million **is no substitute for the real reform** of a system based on 35-year-old valuations. IFS notes disappointment that the SNP — after 20 years in government — still requires 'consensus' before reforming council tax. **LBTT, arguably the tax most in need of reform, is not mentioned at all.**"
+    - title: "Childcare & cost of living"
+      summary: "A means-tested childcare expansion from 9 months to end of primary school would cost **£540 million a year** — but means-testing **weakens work incentives**, and for families on Universal Credit the new policy would add little on top of existing support. The food price ceiling pledge is either **radical and risky** — potentially causing shortages, product reformulations, or supply withdrawal — or a paper tiger if ceilings are set above market prices. The £2 bus fare cap would cost **£210 million a year** by 2031–32."
+    - title: "Public services"
+      summary: "The NHS capital commitment of **£10 billion over ten years** is almost certainly **lower in real terms** than existing Spending Review plans. Eliminating waits over 26 weeks for elective care by end of parliament would be a **stretching target** given Scotland is still treating fewer elective patients than pre-pandemic. On schools, the pledge to 'at least maintain' pupil-teacher ratios is **ambiguous** — with falling pupil numbers, it could allow teacher reductions while technically meeting the commitment, putting the Teacher Jobs Guarantee in direct tension."
+    - title: "Independence & public finances"
+      summary: "The SNP argues independence would ease fiscal pressures — IFS disagrees. Scotland currently has **public spending per person 14% above the UK average**, largely funded by fiscal transfers from London and the South East. Scotland's notional fiscal deficit is **11.6% of GDP**, versus 5.1% for the UK. **Independence would end those transfers**, requiring further spending cuts and/or tax rises to avoid unsustainable borrowing. The SNP is likely right that Brexit harmed the economy, but **rejoining the EU as an independent nation would not automatically reverse this** — Scotland trades more with the rest of the UK than with the EU."
 
 - party: labour
   assessed: true
