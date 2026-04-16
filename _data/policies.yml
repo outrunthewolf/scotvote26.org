@@ -13,8 +13,8 @@
   id: economy
   policies:
     - party: snp
-      status: partial
-      summary: "Argues only independence can give Scotland full economic control. Spending £36m on walk-in GP services as part of public investment programme."
+      status: committed
+      summary: "Make Scotland the best place in Europe to start and scale a business, with a new 'High Growth Unit' for unicorn-scale companies. 150,000 apprenticeships over the parliament, including 8,000+ graduate apprenticeships."
     - party: labour
       status: committed
       summary: "9,000 new apprenticeships and a new industrial strategy. Plans to replace business rates and create a Scottish Treasury."
@@ -37,7 +37,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "£36m investment in a new network of walk-in GP services. Claims to have halved NHS waiting times for new outpatients. Pledges the NHS will never be privatised."
+      summary: "At least £10 billion in capital investment over ten years and £200 million annually to tackle waiting times. End the 8am GP rush with walk-in clinics across Scotland, open 7 days a week."
     - party: labour
       status: committed
       summary: "End the 8am rush for GP appointments and bring back the 'family doctor'. Speed up rollout of an NHS app, invest in AI-enabled scanners and use all available NHS capacity to cut waiting times."
@@ -60,7 +60,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Free university tuition fees retained. Further commitments pending full manifesto (16 April)."
+      summary: "Maintain the best pupil-teacher ratio in the UK and legislate for a national mobile phone ban in all classrooms. A Teacher Jobs Guarantee of minimum 3 years for newly qualified teachers."
     - party: labour
       status: committed
       summary: "Up to 2,000 specialist education recovery teachers. Breakfast clubs in all primary schools, ban mobile phones in classrooms, more classroom assistants and two weeks of funded summer holiday clubs."
@@ -83,7 +83,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "First-time buyers pay no LBTT on the first £175,000 of a property. Further housing commitments pending full manifesto."
+      summary: "Record £4.9 billion investment in affordable house building over four years, targeting 110,000 affordable homes by 2032. A First Homes Fund of £100 million a year offering up to £10,000 deposit support for first-time buyers."
     - party: labour
       status: committed
       summary: "125,000 new homes by 2031, including more than 50,000 affordable. A dedicated Housing Bank to direct investment. LBTT relief threshold raised to £200,000 for first-time buyers."
@@ -106,7 +106,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Committed to net zero by 2045. Argues Scotland's energy resources should be in Scottish hands, achievable only through independence."
+      summary: "End Scotland's contribution to climate change by 2045 in a just and fair way, backed by a £500 million Just Transition Fund. Restore more than 400,000 ha of peatland by 2040 and fund 18,000 ha of woodland creation annually by 2029."
     - party: labour
       status: partial
       summary: "Support renewables expansion and remove what they describe as the SNP's block on new nuclear energy in Scotland."
@@ -129,7 +129,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Scotland's energy resources should be in Scottish hands. Argues only independence can deliver lower energy bills by controlling the energy system."
+      summary: "Accelerate investment in offshore wind, solar and pumped storage, and establish a ScotWind Wealth Fund for future generations. Will not greenlight any new nuclear power stations, backing renewables as faster, cheaper and safer."
     - party: labour
       status: committed
       summary: "Support renewables expansion. Remove the block on new nuclear energy to diversify Scotland's energy mix."
@@ -152,7 +152,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Peak rail fares permanently scrapped. Further transport commitments pending full manifesto."
+      summary: "Legislate for a £2 bus fare cap across Scotland by end of parliament. Complete dualling of the A9 between Perth and Inverness by 2035, backed by almost £200 million investment."
     - party: labour
       status: committed
       summary: "£350m dedicated potholes fund. Deliver the Glasgow Airport Rail Link."
@@ -175,7 +175,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Council tax and water bills kept lower than the rest of the UK. Prescription charges abolished. Peak rail fares scrapped."
+      summary: "Establish legal price ceilings on a basket of 20–50 essential food items at large supermarkets. Expand childcare to all children from 9 months to end of primary school, 52 weeks a year."
     - party: labour
       status: committed
       summary: "Making life more affordable is the first manifesto priority. Commitments include tax relief for first-time buyers and breakfast clubs to reduce household costs."
@@ -198,7 +198,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "LBTT relief up to £175,000 for first-time buyers. No tuition fees, no prescription charges. Further tax policy pending full manifesto."
+      summary: "No increase to income tax band numbers or rates over the parliament, aiming to simplify the system. From 2028, a mansion tax adding two new bands for properties over £1 million and £2 million, with funds going to local services."
     - party: labour
       status: committed
       summary: "Raise LBTT relief threshold to £200,000 for first-time buyers. Replace business rates with a fairer system."
@@ -221,7 +221,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Free personal care retained as an existing commitment. Further social care policy pending full manifesto."
+      summary: "Legislate for a legal right to breaks for unpaid carers and commission annual health checks for them. A new £20 million Complex Care Investment to free up around 400 hospital beds."
     - party: labour
       status: tbc
       summary: null
@@ -243,8 +243,8 @@
   id: justice
   policies:
     - party: snp
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Record £1.7 billion for police, maintaining the highest officer numbers per head in the UK. Introduce a Misogyny Bill to outlaw harassment and abuse based on misogyny, and ban deepfake intimate images."
     - party: labour
       status: committed
       summary: "Named local police officers for communities. Stronger action on antisocial behaviour."
@@ -266,8 +266,8 @@
   id: government-reform
   policies:
     - party: snp
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Bring forward a Public Service Renewal Bill in the first year to substantially reduce the number of public bodies."
     - party: labour
       status: committed
       summary: "Cut one-third of quangos and return powers to ministers. Create a new Scottish Treasury to improve economic management."
@@ -290,7 +290,7 @@
   policies:
     - party: snp
       status: committed
-      summary: "Independence is central to the SNP's campaign. The first SNP vote elects an SNP Government; the second delivers independence. Argues Westminster doesn't work for Scotland."
+      summary: "An SNP majority is treated as a mandate — based on the 2011 precedent — for powers to be transferred to enable an independence referendum. Independence remains the central long-term goal."
     - party: labour
       status: opposed
       summary: "Opposes independence and a second referendum. Argues Scotland's challenges are best solved within the UK."

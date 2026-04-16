@@ -10,9 +10,9 @@
   colour: "#FDD835"
   colour_rgb: "253,216,53"
   text_colour: "#1a1a1a"
-  manifesto_released: false
-  manifesto_date: null
-  manifesto_url: null
+  manifesto_released: true
+  manifesto_date: "16 April 2026"
+  manifesto_url: "https://www.snp.org/manifesto"
   leader: John Swinney
   stance_independence: "Pro-independence. Advocates for a second independence referendum as central campaign issue."
 
