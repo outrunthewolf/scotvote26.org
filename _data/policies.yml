@@ -22,8 +22,8 @@
       status: committed
       summary: "A 'growth test' for every government policy. Enterprise-style zones, cut red tape and lower business rates to attract investment."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "New industrial and skills strategies on day one, inviting business leaders to shape the Programme for Government. Job Transition Loans of up to £5,000 for retraining. New SME-focused arm of the Scottish National Investment Bank. Halve Scottish Government spending on private consultancy."
     - party: greens
       status: committed
       summary: "Tax wealth and polluting industries to fund public services. Establish regional green skills hubs linking colleges, employers and unions."
@@ -45,8 +45,8 @@
       status: committed
       summary: "Guarantee a GP appointment within 48 hours. £350m extra NHS funding above inflation. Bring back recently retired doctors and nurses to reduce waiting lists."
     - party: libdem
-      status: partial
-      summary: "Campaign priority: ensure everyone can see a GP, dentist or mental health professional in their local community when they need one."
+      status: committed
+      summary: "Embed 900 new multidisciplinary staff across GP practices — the equivalent of an extra clinician per practice. National lung cancer screening programme. 10-year NHS workforce plan. Walk-in mental health services. Guarantee NHS dentist access. Halve delayed discharge from hospital before the end of the decade."
     - party: greens
       status: tbc
       summary: null
@@ -68,8 +68,8 @@
       status: committed
       summary: "Raise educational standards, increase classroom assistants and ban mobile phones. Support for teachers as a priority."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Recruit 2,000 more pupil support assistants and roll out specialist support including speech and language therapists. Play-based learning until age 7. Legislate for smartphone-free schools. End zero-hours teacher contracts. Inflation-proof Pupil Equity Funding. Restore colleges to a strong role in local economic development."
     - party: greens
       status: tbc
       summary: null
@@ -91,8 +91,8 @@
       status: committed
       summary: "80,000 affordable homes over the next five years. Abolish LBTT on primary residences entirely. Opposes rent controls."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Target 25,000 new homes built annually. 10,000 dedicated key worker homes. Help to Renovate loan scheme for neglected properties. Young Homeless Guarantee. Replace council tax with a land value system. Consult on LBTT exemptions for brownfield sites and downsizers."
     - party: greens
       status: committed
       summary: "All new homes must meet net-zero standards. Strengthen rent controls by removing exemptions for mid-market and build-to-rent properties. Four-month notice period for evictions and ban on evictions for sale or owner-occupation in the first 12 months."
@@ -114,8 +114,8 @@
       status: partial
       summary: "Back oil and gas industry alongside support for new nuclear power. Less emphasis on accelerating net zero targets."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Net zero by 2045 with a clear roadmap. Emergency insulation programme to cut household bills. Clean Water Act to tackle sewage dumping. Expand woodlands using at least 50% native species. Double fixed penalty for littering. Remove ideological opposition to Small Modular Reactors. Oppose fracking."
     - party: greens
       status: committed
       summary: "Get Scotland back on track for net zero by 2045 with a coordinated climate action delivery programme. £600m investment in onshore and offshore wind, wave and solar to lower energy bills."
@@ -137,8 +137,8 @@
       status: committed
       summary: "Back North Sea oil and gas alongside support for new nuclear power as part of a balanced energy policy."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Emergency insulation programme and accelerated rollout of heat pumps and district heating. Quadruple solar energy generation this parliament. Overhaul community benefit rules so local areas get more from nearby renewable projects. Open to Small Modular Reactors subject to proper scrutiny. Support carbon capture, creating up to 15,000 jobs."
     - party: greens
       status: committed
       summary: "£600m investment programme in onshore and offshore wind, wave and solar. Zero-carbon energy to lower bills and cut emissions."
@@ -160,8 +160,8 @@
       status: committed
       summary: "National pothole fund, trunk road upgrades and bridge restoration across Scotland."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Ferries Bill to end the island ferry fiasco. TfL-style bus model giving communities control over routes. Nationwide tap-and-go transport with a daily spend cap. A9 dualling accelerated; A96 dualling timetable within 100 days. Dangerous Roads Programme. More late-night ScotRail services and new stations."
     - party: greens
       status: committed
       summary: "All new homes must be connected to zero-carbon public transport. Reduce transport emissions as part of the climate action delivery programme."
@@ -183,8 +183,8 @@
       status: committed
       summary: "Cut taxes so people keep more of their own money. Raise the income tax threshold and reduce rates to ease cost-of-living pressure."
     - party: libdem
-      status: partial
-      summary: "Tackling the cost-of-living crisis listed as a campaign focus. Full detail pending manifesto (17 April)."
+      status: committed
+      summary: "Emergency insulation programme to cut energy bills. Job Transition Loans up to £5,000 for retraining. UK-EU customs union described as the single biggest lever for reducing costs. 25,000 new homes a year to ease housing costs. Fairer childcare for working families."
     - party: greens
       status: committed
       summary: "Lower energy bills through £600m renewable investment. Stronger tenant protections to limit housing costs."
@@ -206,8 +206,8 @@
       status: committed
       summary: "Raise the income tax threshold to £13,892 by 2031 (saving ~£250/year). Income tax rate of 19% up to the higher rate. Higher rate threshold raised to £50,270 to match the rest of the UK. Abolish LBTT on primary residences entirely."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Lift tax thresholds with inflation where funds allow and gradually close the income tax differential with England. Replace council tax with a land value system. Reform business rates with a land value element. Air Departure Tax devolution. Private jet tax. Point of entry levy powers for councils."
     - party: greens
       status: committed
       summary: "Tax wealth and polluting industries to pay for public services. Ask the richest in society to pay more."
@@ -229,8 +229,8 @@
       status: tbc
       summary: null
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "National bargaining on care worker pay and a new career ladder. Increase Carer Support Payment by £400 a year. Young Carers' Leads in every school and college. Halve delayed discharge from hospital before the end of the decade. Key worker housing to help care staff take up posts."
     - party: greens
       status: committed
       summary: "Free social care at the point of need — ending non-residential care charges as a first step. Gradually end outsourcing to private companies by bringing care homes into public or community ownership. Raise social care worker wages as a priority and recognise the third sector as an equal partner in delivery."
@@ -252,8 +252,8 @@
       status: committed
       summary: "Repeal the Hate Crime and Public Order Act. Tougher sentencing and more prison capacity."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Strengthen the Retail Crime Taskforce. Invest in robust community sentences as credible alternatives to prison. Reduce reoffending through education and welfare checks within 48 hours of release. Independent director of prosecutions. Restorative justice. Inject local democracy back into Police Scotland."
     - party: greens
       status: committed
       summary: "Prevention and community justice over incarceration — reduce the prison population by investing in youth work, trauma-informed practice and community sentences. Recognise misogyny in Scots law and fund violence prevention services. Reverse cuts to legal aid and reinvest in housing, mental health and addiction services to address the root causes of crime."
@@ -275,8 +275,8 @@
       status: committed
       summary: "Cut quangos by at least a quarter. Introduce a Taxpayer Savings Act to ensure public money is spent efficiently."
     - party: libdem
-      status: tbc
-      summary: null
+      status: committed
+      summary: "Accountability Act to enshrine the Ministerial Code in law and introduce MSP recall. End SNP centralisation and shift power to local government. Change Holyrood voting system to STV. Back a written federal UK constitution. Halve Scottish Government consultancy spend. Reboot the civil service."
     - party: greens
       status: tbc
       summary: null
@@ -299,7 +299,7 @@
       summary: "Strongly opposes independence and any further referendums. Positions the election as a choice between SNP division and Conservative stability."
     - party: libdem
       status: opposed
-      summary: "Opposes independence. Supports a federal UK as an alternative to both the status quo and separation."
+      summary: "Firmly opposes independence and a second referendum. Backs a federal UK with a written constitution instead, with power devolved as close as possible to communities."
     - party: greens
       status: committed
       summary: "Supports Scottish independence as part of building a greener, fairer country. Would use Holyrood to advance the case for independence."

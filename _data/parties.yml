@@ -46,8 +46,8 @@
   colour: "#FAA61A"
   colour_rgb: "250,166,26"
   text_colour: "#1a1a1a"
-  manifesto_released: false
-  manifesto_date: null
+  manifesto_released: true
+  manifesto_date: "17 April 2026"
   manifesto_url: "https://www.scotlibdems.org.uk/2026-manifesto"
   leader: Alex Cole-Hamilton
   stance_independence: "Unionist. Opposes independence; supports a federal UK."
