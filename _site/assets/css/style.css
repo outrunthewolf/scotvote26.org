@@ -333,13 +333,39 @@ a:hover { text-decoration: underline; }
 .policy-table tr:last-child td { border-bottom: none; }
 
 .policy-area-cell {
+  min-width: 160px;
+  vertical-align: top;
+}
+
+.policy-area-name {
   font-weight: 600;
   white-space: nowrap;
-  min-width: 160px;
 }
 
 .policy-area-icon {
   margin-right: .35rem;
+}
+
+.policy-share {
+  display: flex;
+  gap: .3rem;
+  margin-top: .45rem;
+}
+
+.policy-share-link {
+  font-size: .68rem;
+  font-weight: 600;
+  color: var(--colour-muted);
+  text-decoration: none;
+  padding: .1rem .3rem;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  line-height: 1.4;
+  transition: color .15s, border-color .15s;
+}
+
+.policy-share-link:hover {
+  color: var(--colour-text);
 }
 
 .policy-cell {

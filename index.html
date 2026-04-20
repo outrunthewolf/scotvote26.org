@@ -72,9 +72,16 @@ description: All six party manifestos compared side by side — 13 policy areas,
           </thead>
           <tbody>
             {% for area in site.data.policies %}
+            {% capture share_text %}All 6 Scottish parties on {{ area.area }} — who's committed, who's opposed {{ area.icon }} #SP2026 #ScotPol{% endcapture %}
+            {% assign share_url = "https://scotvote26.org/#" | append: area.id %}
+            {% capture bsky_text %}{{ share_text }} {{ share_url }}{% endcapture %}
             <tr data-area="{{ area.id }}">
               <td class="policy-area-cell">
-                <span class="policy-area-icon">{{ area.icon }}</span>{{ area.area }}
+                <div class="policy-area-name"><span class="policy-area-icon">{{ area.icon }}</span>{{ area.area }}</div>
+                <div class="policy-share">
+                  <a class="policy-share-link" href="https://twitter.com/intent/tweet?text={{ share_text | url_encode }}&url={{ share_url | url_encode }}" target="_blank" rel="noopener" title="Share on 𝕏">𝕏</a>
+                  <a class="policy-share-link" href="https://bsky.app/intent/compose?text={{ bsky_text | url_encode }}" target="_blank" rel="noopener" title="Share on Bluesky">Bluesky</a>
+                </div>
               </td>
               {% for party in site.data.parties %}
                 {% assign party_policy = null %}

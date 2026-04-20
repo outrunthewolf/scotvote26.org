@@ -10,7 +10,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/social-seo.png
+      image: /assets/images/social-seo.jpg
 
 markdown: kramdown
 highlighter: rouge
