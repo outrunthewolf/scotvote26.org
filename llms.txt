@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # Scotland Votes 2026
 
-> An independent, non-partisan policy comparison and manifesto tracker for the Scottish Parliament election on 7 May 2026. Covers all six major parties contesting the election. Data is sourced directly from published manifestos.
+> Archived. This site captured party manifesto commitments for the Scottish Parliament election on 7 May 2026. The election has taken place. Data reflects manifesto positions as published before polling day — no further updates will be made.
 
 ## Site
 
@@ -69,6 +69,6 @@ IFS assessment not yet published.{% unless party.manifesto_released %} Manifesto
 
 - All policy summaries are sourced directly from published party manifestos.
 - IFS verdicts and theme summaries are condensed paraphrases of IFS analysis, not direct quotes. Refer to source URLs for full text.
-- Party positions marked "tbc" indicate the manifesto had not yet been published at time of last update.
-- This site is non-partisan and does not endorse any party.
+- Party positions marked "tbc" indicate the manifesto had not been published before polling day.
+- This site is archived and non-partisan. It does not endorse any party.
 - Last updated: {{ site.time | date: "%-d %B %Y" }}

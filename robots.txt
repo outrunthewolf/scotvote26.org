@@ -1,0 +1,8 @@
+# Scotland Votes 2026 — scotvote26.org
+# This site is archived. The Scottish Parliament election took place on 7 May 2026.
+# Content reflects party manifesto commitments as published before polling day.
+# No further updates will be made.
+
+User-agent: *
+Allow: /
+Crawl-delay: 10
