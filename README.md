@@ -1,3 +1,5 @@
+⚠️ Project is not being updated since election has completed
+
 # Scotland Votes 2026
 
 Track Scottish party manifestos and compare policies side by side. Built for voters.
